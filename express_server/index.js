@@ -67,4 +67,5 @@ app.use('/', router);
 // })
 
 // 정적 미들처리
-app.use(express.static(__dirname+'/public'))
+app.use(express.static(__dirname+'/public'))    // 이렇게 하지 않으면 index.html이 css를 가져오지 못한다
+// 위 코드는 public 폴더 안에 있는 애들을 사용하겠다라는 의미
